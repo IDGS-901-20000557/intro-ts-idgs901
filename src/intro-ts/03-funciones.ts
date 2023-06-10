@@ -45,3 +45,15 @@ const functSumar = function(n1:number, n2:number){
     return n1+n2;
 }
 console.log(functSumar(4,9));
+
+//Parametros REST en funciones
+function calcular2(...valores:number[]){
+    let suma=0;
+    for(let x=0; x<valores.length; x++){
+        suma+=valores[x];
+    }
+    return suma;
+}
+
+console.log(calcular2(10,2,3,4));
+console.log(calcular2(1,2));
